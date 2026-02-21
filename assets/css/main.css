@@ -839,18 +839,58 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 75vh;
+  min-height: 58vh;
   position: relative;
-  padding: 60px 0;
+  padding: 0px 0;
   display: flex;
   align-items: center;
-  background: url("../img/hero-bg.jpg") top left;
-  background-size: cover;
+  /* background: url("../img/hero-bg1.jpg") top left; */
+  /* background-size: cover; */
+}
+
+.hero2 {
+  width: 100%;
+  min-height: 28vh;
+  position: relative;
+  padding: 0px 0;
+  display: flex;
+  align-items: center;
+}
+
+.hero
+.swiper-wrapper
+.swiper-slide {
+  /* width: 100%; */
+  height: auto;
+}
+
+.hero .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.hero .swiper-wrapper {
+  height: 100%;
+}
+
+.hero .swiper-slide {
+  height: 100%;
+}
+
+.hero .swiper-slide picture,
+.hero .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero .swiper-slide img {
+  object-fit: cover;
 }
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  /* background: color-mix(in srgb, var(--background-color), transparent 100%); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -928,6 +968,88 @@ section,
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+.hero2:before {
+  content: "";
+  /* background: color-mix(in srgb, var(--background-color), transparent 100%); */
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero2 .container {
+  position: relative;
+}
+
+.hero2 h1 {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: center;
+}
+
+.hero2 h1 span {
+  color: var(--accent-color);
+}
+
+.hero2 p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin: 5px 0 30px 0;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.hero2 .btn-get-started {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 4px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+.hero2 .btn-get-started:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+.hero2 .btn-watch-video {
+  font-size: 16px;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: var(--default-color);
+  font-weight: 600;
+}
+
+.hero2 .btn-watch-video i {
+  color: var(--accent-color);
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+.hero2 .btn-watch-video:hover {
+  color: var(--accent-color);
+}
+
+.hero2 .btn-watch-video:hover i {
+  color: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+.hero2 .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
 @media (max-width: 640px) {
   .hero h1 {
     font-size: 28px;
@@ -942,6 +1064,22 @@ section,
 
   .hero .btn-get-started,
   .hero .btn-watch-video {
+    font-size: 13px;
+  }
+
+  .hero2 h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hero2 p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .hero2 .btn-get-started,
+  .hero2 .btn-watch-video {
     font-size: 13px;
   }
 }

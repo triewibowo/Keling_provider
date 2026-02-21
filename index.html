@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.svg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -26,6 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
 
   <!-- =======================================================
   * Template Name: BizLand
@@ -60,7 +61,7 @@
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <img src="assets/img/logo.svg" alt="">
           <h1 class="sitename">Indosat Hifi</h1>
         </a>
 
@@ -69,8 +70,6 @@
             <li><a href="#hero" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#team">Team</a></li>
             <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="#">Dropdown 1</a></li>
@@ -104,27 +103,104 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
 
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 800,
+              "slidesPerView": 1,
+              "grabCursor": true,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "clickable": true
+              }
+            }
+
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="assets/img/hero-bg-mobile1.jpg">
+                  <img src="assets/img/hero-bg1.jpg" alt="Hero 1">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="assets/img/hero-bg-mobile2.jpg">
+                  <img src="assets/img/hero-bg2.jpg" alt="Hero 2">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="assets/img/hero-bg-mobile3.jpg">
+                  <img src="assets/img/hero-bg3.jpg" alt="Hero 1">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="assets/img/hero-bg4.jpg">
+                  <img src="assets/img/hero-bg4.jpg" alt="Hero 1">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="assets/img/hero-bg-mobile5.jpg">
+                  <img src="assets/img/hero-bg5.jpg" alt="Hero 1">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="assets/img/hero-bg-mobile6.jpg">
+                  <img src="assets/img/hero-bg6.jpg" alt="Hero 1">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="assets/img/hero-bg-mobile7.jpg">
+                  <img src="assets/img/hero-bg7.png" alt="Hero 1">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="assets/img/hero-bg-mobile8.jpg">
+                  <img src="assets/img/hero-bg8.jpg" alt="Hero 1">
+                </picture>
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Clients Section -->
+    <section id="hero2" class="hero2 section light-background">
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+          <div class="row">
+          <div class="col-lg-12 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
             <h1>Welcome to <span>HiFi</span></h1>
             <p>We are team of talented designers making websites with Bootstrap</p>
-            <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            <div class="d-flex justify-content-center">
+              <a href="https://wa.me/6289626613331?text=Saya%20ingin%20berlangganan..." target="_blank" class="btn-get-started">Langganan</a>
+              <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
             </div>
           </div>
         </div>
       </div>
-
-    </section><!-- /Hero Section -->
+    </section>
 
     <!-- Featured Services Section -->
     <section id="featured-services" class="featured-services section">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Daftar</h2>
-        <p><span>Cara Daftar</span> <span class="description-title">Mudah</span></p>
+        <h2>Berlangganan</h2>
+        <p><span>Cara Berlangganan</span> <span class="description-title">Mudah</span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -133,33 +209,33 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="icon"><i class="bi bi-person-plus icon"></i></div>
+              <h4><a href="https://wa.me/6289626613331?text=Saya%20ingin%20berlangganan..." target="_blank" class="stretched-link">Registrasi</a></h4>
+              <p>Cek area, pilih layanan, jadwal pemasangan, proses pembayaran.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <div class="icon"><i class="bi bi-patch-check icon"></i></div>
+              <h4><a href="https://wa.me/6289626613331?text=Saya%20ingin%20berlangganan..." target="_blank" class="stretched-link">Validasi</a></h4>
+              <p>Proses validasi data berlangganan yang cepat dapat dibantu.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <div class="icon"><i class="bbi bi-router icon"></i></div>
+              <h4><a href="https://wa.me/6289626613331?text=Saya%20ingin%20berlangganan..." target="_blank" class="stretched-link">Instalasi</a></h4>
+              <p>Lacak proses instalasi. Komplek, Perumahan, Jalan besar & Gang bisa dipasang selagi jarak 200 meter dari tiang</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-              <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <div class="icon"><i class="bi bi-credit-card icon"></i></div>
+              <h4><a href="https://wa.me/6289626613331?text=Saya%20ingin%20berlangganan..." target="_blank" class="stretched-link">Pembayaran</a></h4>
+              <p>Lakukan pembayaran dan nikmati layanan HiFi Anda!</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -174,45 +250,34 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p><span>Find Out More</span> <span class="description-title">About Us</span></p>
+        <h2>Tentang Kami</h2>
+        <p><span>Temukan Lebih Banyak</span> <span class="description-title">Tentang Kami</span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-3">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <img src="assets/img/about.jpg" alt="" class="img-fluid">
+          </div> -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="ratio ratio-16x9">
+              <video controls>
+                <source src="assets/video/video1.mp4" type="video/mp4">
+                Browser kamu tidak mendukung video.
+              </video>
+            </div>
           </div>
+
 
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="about-content ps-0 ps-lg-3">
-              <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+              <h3>Tentang Kami</h3>
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li>
-                  <i class="bi bi-diagram-3"></i>
-                  <div>
-                    <h4>Ullamco laboris nisi ut aliquip consequat</h4>
-                    <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
-                  </div>
-                </li>
-                <li>
-                  <i class="bi bi-fullscreen-exit"></i>
-                  <div>
-                    <h4>Magnam soluta odio exercitationem reprehenderi</h4>
-                    <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                  </div>
-                </li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
+                Indosat HiFi by Indosat Ooredoo Hutchison hadir untuk mengoptimalkan aktivitas digital kita semua dengan layanan internet yang #NyataAndalnya.
+                Jelajahi internet dengan bebas dan tanpa khawatir akan jaringan yang tidak stabil dengan kualitas koneksi yang terpercaya dan layanan customer service yang siap siaga.
               </p>
             </div>
 
